@@ -17,22 +17,14 @@ if __name__ == '__main__':
 
 ## Solution
 
-```bash
-
-"""
-An example program with constants
-"""
-
-INCHES_IN_FOOT: int = 12  # Conversion factor. There are 12 inches for 1 foot.
 
 def main():
-    feet: float = float(input("Enter number of feet: "))  # Get the number of feet, make sure to cast it to a float!
-    inches: float = feet * INCHES_IN_FOOT  # Perform the conversion
-    print("That is", inches, "inches!")
+    feet = float(input("Enter the number of feet: "))
+   
+    inches = feet * 12
     
-    
-# This provided line is required at the end of a Python file
-# to call the main() function.
+    print(f"{feet} feet is equal to {inches} inches.")
+
 if __name__ == '__main__':
     main()
-```
+(https://colab.research.google.com/drive/1J4kwFYfDFwUO4Gy9nuk_YSlnMFJP69TY#scrollTo=pGQhka2xn1wc&line=2&uniqifier=1)
